@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>xyz.subho</groupId>
 	<artifactId>covid-tracker</artifactId>
-	<version>0.0.1</version>
+	<version>1.1</version>
 	<packaging>war</packaging>
 	<name>covid-tracker</name>
 	<description>Spring Boot Project for COVID 19 Tracking</description>
@@ -45,6 +45,14 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-csv -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-csv</artifactId>
+		    <version>1.8</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
@@ -52,6 +60,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.3</version>
+				<configuration>
+					<warName>ROOT</warName>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
