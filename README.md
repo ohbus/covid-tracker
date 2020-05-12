@@ -12,7 +12,9 @@
 
 ### The executable runtime can be either downloaded from [packages](https://github.com/ohbus/covid-tracker/packages) or the [releases](https://github.com/ohbus/covid-tracker/releases) page
 
-## To run this JAR (Requires JRE 11+)
+## To run this JAR (Requires JDK 11+)
+
+_Note: You can always build your own JRE using `jlink` from JDK 11+_
 
 #### **`java -jar covid-tracker-1.1.jar`**
 
