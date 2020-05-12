@@ -8,9 +8,9 @@
 
 #### This is a Spring Boot Application and integrated with Thymeleaf for data representation
 
-#### Send in your Contribution using Pull Requests.
+#### Send in your Contribution using Pull Requests
 
-### The executable runtime can be either downloaded from [packages](https://github.com/ohbus/covid-tracker/packages) or the [releases](https://github.com/ohbus/covid-tracker/releases) page.
+### The executable runtime can be either downloaded from [packages](https://github.com/ohbus/covid-tracker/packages) or the [releases](https://github.com/ohbus/covid-tracker/releases) page
 
 ## To run this JAR (Requires JRE 11+)
 
