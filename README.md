@@ -28,4 +28,4 @@
 
 #### **`docker run -d -p 80:8080 docker.pkg.github.com/ohbus/covid-tracker/application:1.1`**
 
-##### Open **`localhost`** in your browser to see application running.
+##### Open **`localhost`** in your browser to see application running
