@@ -30,7 +30,7 @@ public class CoronaVirusDataService {
     }
 
     @PostConstruct
-    @Scheduled(cron = "* 1 * * * *")
+    @Scheduled(cron = "0 0/30 * * * *")
     public void fetchVirusData() throws IOException, InterruptedException {
         List<LocationStats> newStats = new ArrayList<>();
         
