@@ -8,43 +8,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<script type="text/javascript" th:src="@{/js/jsapp/app.js}"></script>
 	<script type="text/javascript" th:src="@{/js/particles.js}"></script>
+	<script>
+		particlesJS.load('particles-js', 'js/particles.json', function() {
+			console.log('particles.js loaded - callback');
+		});
+	</script>
 	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/4.4.1-1/css/bootstrap.min.css}"/>
 </head>
 
 <body>
 	<div id="particles-js">
-	<div class="container mydisplay">
-		<h1 class="myhead">Coronavirus Tracker Application</h1>
-		<p class="mypara">This application lists the current number of cases reported across the globe</p>
-		
-		<div class="jumbotron">
-		    <h1 class="display-4" th:text="${totalReportedCases}"></h1>
-		    <p class="lead">Total cases reported as of today</p>
-		    <hr class="my-4">
-		    <p>
-		        <span>New cases reported since last day:</span>
-		        <span th:text="${totalNewCases}"></span>
-		    </p>
+		<div class="container mydisplay">
+			<h1 class="myhead">Coronavirus Tracker Application</h1>
+			<p class="mypara">This application lists the current number of cases reported across the globe</p>
+			
+			<div class="jumbotron">
+			    <h1 class="display-4" th:text="${totalReportedCases}"></h1>
+			    <p class="lead">Total cases reported as of today</p>
+			    <hr class="my-4">
+			    <p>
+			        <span>New cases reported since last day:</span>
+			        <span th:text="${totalNewCases}"></span>
+			    </p>
+			</div>
+			
+			<table class="table">
+			    <tr>
+			        <th>State</th>
+			        <th>Country</th>
+			        <th>Total cases reported</th>
+			        <th>Changes since last day</th>
+			    </tr>
+			    <tr th:each="locationStat : ${locationStats}">
+			        <td th:text="${locationStat.state}"></td>
+			        <td th:text="${locationStat.country}"></td>
+			        <td th:text="${locationStat.latestTotalCases}">0</td>
+			        <td th:text="${locationStat.diffFromPrevDay}">0</td>
+			    </tr>
+			</table>
 		</div>
-		
-		<table class="table">
-		    <tr>
-		        <th>State</th>
-		        <th>Country</th>
-		        <th>Total cases reported</th>
-		        <th>Changes since last day</th>
-		    </tr>
-		    <tr th:each="locationStat : ${locationStats}">
-		        <td th:text="${locationStat.state}"></td>
-		        <td th:text="${locationStat.country}"></td>
-		        <td th:text="${locationStat.latestTotalCases}">0</td>
-		        <td th:text="${locationStat.diffFromPrevDay}">0</td>
-		    </tr>
-		</table>
 	</div>
-</div>
-
 </body>
 
 </html>
