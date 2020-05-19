@@ -4,7 +4,7 @@
 
 ### Corona Virus Tracker Application
 
-#### Application is live at [covid.subho.xyz](https://covid.subho.xyz)
+#### Application is live at [covid.subho.xyz](https://covid.subho.xyz) Data is updated at an interval of 30 minutes.
 
 #### This is a Spring Boot Application and integrated with Thymeleaf for data representation
 
