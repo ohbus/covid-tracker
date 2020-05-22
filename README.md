@@ -6,6 +6,8 @@
 
 #### Application is live at [covid.subho.xyz](https://covid.subho.xyz) Data is updated at an interval of 30 minutes.
 
+![Screenshot](https://github.com/ohbus/covid-tracker/blob/readme/assets/covid-tracker.gif)
+
 #### This is a Spring Boot Application and integrated with Thymeleaf for data representation
 
 #### Send in your Contribution using Pull Requests
