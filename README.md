@@ -1,6 +1,6 @@
 # COVID-19 Tracker
 
-![Maven CI](https://github.com/ohbus/covid-tracker/workflows/Maven%20CI/badge.svg) [![Build Status](https://ci.subho.xyz/buildStatus/icon?job=covid-tracker+CI)](https://ci.subho.xyz/job/covid-tracker%20CI/) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/eaac0375e979405b919b2eb1cb6ddefa)](https://www.codacy.com/manual/ohbus/covid-tracker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ohbus/covid-tracker&amp;utm_campaign=Badge_Grade)
+![Maven CI](https://github.com/ohbus/covid-tracker/workflows/Maven%20CI/badge.svg)
 
 ### Corona Virus Tracker Application
 
