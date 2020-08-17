@@ -1,12 +1,10 @@
-# This workflow will build a Java project with Maven
-
 name: Maven CI
 
 on:
   push:
-    branches: [ '*' ]
+    branches: [ '**' ]
   pull_request:
-    branches: [ '*' ]
+    branches: [ '**' ]
 
 jobs:
   build:

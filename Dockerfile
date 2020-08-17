@@ -4,8 +4,10 @@ LABEL maintainer="Subhrodip Mohanta"
 LABEL email="hello@subho.xyz"
 LABEL application="Coronavirus Tracker Application"
 
-COPY covid-tracker/target/covid-tracker-1.2.jar /usr/local/covid-tracker/
+ARG JAR_FILE=covid-tracker/target/*.jar
+
+COPY ${JAR_FILE} app.jar
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "/usr/local/covid-tracker/covid-tracker-1.2.jar"]
+ENTRYPOINT [ "java", "-jar", "/app.jar" ]
