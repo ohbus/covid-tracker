@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 public class CoronaVirusDataServiceTest {
     @Autowired
-    CoronaVirusDataService coronaVirusDataService;
+    private CoronaVirusDataService coronaVirusDataService;
 
     @Test
     public void shouldBeReturningListOfLocationStats() throws IOException, InterruptedException {

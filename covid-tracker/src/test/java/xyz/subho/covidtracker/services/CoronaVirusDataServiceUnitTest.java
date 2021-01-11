@@ -21,10 +21,10 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 public class CoronaVirusDataServiceUnitTest {
 
-    CoronaVirusDataService coronaVirusDataService;
+    private CoronaVirusDataService coronaVirusDataService;
 
     @Mock
-    CoronaVirusDataClient client ;
+    private CoronaVirusDataClient client ;
 
     @BeforeEach
     void setUp() {

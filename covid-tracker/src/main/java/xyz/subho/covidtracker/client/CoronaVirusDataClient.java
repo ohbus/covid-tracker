@@ -13,18 +13,14 @@ public class CoronaVirusDataClient {
 
     private static String VIRUS_DATA_URL = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv";
 
-    private HttpResponse<String> httpResponse;
-
-    private HttpClient client;
-
     public String getVirusData() throws IOException, InterruptedException {
-        client = HttpClient.newHttpClient();
+        HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(VIRUS_DATA_URL))
                 .build();
 
-        httpResponse = client.send(request, HttpResponse.BodyHandlers.ofString());
+        HttpResponse<String>  httpResponse = client.send(request, HttpResponse.BodyHandlers.ofString());
         return httpResponse.body();
     }
 }
